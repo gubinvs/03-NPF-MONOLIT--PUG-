@@ -1,0 +1,21 @@
+//- Подключил шаблон с разметкой страницы
+extends includes/doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Наименование главной страницы
+    - var titleName = 'НПФ "Монолит" - производство строительных материалов';
+    //- Массив с путями к файлам со стилями
+    - var stylePath = ['css/main-drymixes.css'];
+
+//- Вставил блок с будующим контентом
+block content
+    .container
+            include includes/header.pug
+    main.main
+        section.main-drymixes-section
+            include includes/main-drymixes.pug 
+        section.plaster-section
+            include includes/plaster-section.pug
+        footer.footer
+            include includes/footer.pug

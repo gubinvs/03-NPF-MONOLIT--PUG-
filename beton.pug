@@ -1,0 +1,22 @@
+//- Подключил шаблон с разметкой страницы
+extends includes/doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Наименование главной страницы
+    - var titleName = 'НПФ "Монолит" - Производство товарного бетона';
+    //- Массив с путями к файлам со стилями
+    - var stylePath = ['css/beton.css'];
+
+//- Вставил блок с будующим контентом
+block content
+    .container
+        include includes/header.pug
+    main.main
+        section.main-beton-section
+            include includes/main-beton.pug
+        section.recept-beton 
+            include includes/recept-beton.pug
+        section.table-price
+            include includes/table-price.pug
+            
