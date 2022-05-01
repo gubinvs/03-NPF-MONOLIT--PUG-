@@ -35,15 +35,16 @@ $cl-title__phone: #f28907;
 }
 
 .main-drymixes-section__title {
-  margin-bottom: 23px;
+  margin-bottom: 10px;
   font-family: $ff-Oswald;
-	font-size: calc(50px + (100vw * 0.01 - 14.40px));
+	font-size: calc(48px + (100vw * 0.01 - 14.40px));
 	font-weight: 600;
+  line-height: 48px;
   color: $cl-title;
 }
 
 .main-drymixes-section__discription {
-	font-size: 24px;
+	font-size: calc(24px + (100vw * 0.01 - 14.40px));
 	font-weight: 300;
 	font-style: normal;
 	line-height: 32px;
