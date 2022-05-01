@@ -28,3 +28,14 @@ $ff-Oswald: 'Oswald', sans-serif;
     width: 100%;
 }
 
+//-- Cтили для смартфонов
+@media only screen and (max-width: 650px) {
+    .main-beton__container {
+        flex-direction: column;
+    }
+
+    .block-img__img {
+        display: none;
+    }
+}
+

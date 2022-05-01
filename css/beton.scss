@@ -2,10 +2,22 @@
     display: flex;
     align-items: flex-end;
     height: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-image: url(../img/beton-page-img/beton-bg-img__1920.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
+
+
+//-- Cтили для смартфонов
+@media only screen and (max-width: 850px) {
+    .main-beton-section {
+        margin-bottom: 50px;
+    }
+}
+
+
 
 //-- Главная секция страницы
 @import 'main-beton.scss';
@@ -15,3 +27,6 @@
 
 //-- Секция c таблицей цен на бетон
 @import 'table-price.scss';
+
+//-- Секция c информацией о доставке
+@import 'delivery-section.scss';
