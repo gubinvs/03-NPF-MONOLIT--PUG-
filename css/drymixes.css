@@ -151,7 +151,7 @@
 
 .feature__discription {
   margin-bottom: 10px;
-  font-size: calc(22px + (100vw * 0.01 - 14.40px));
+  font-size: calc(20px + (100vw * 0.01 - 14.40px));
 }
 
 .table__item {

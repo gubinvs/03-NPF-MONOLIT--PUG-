@@ -21,12 +21,12 @@ div.container.footer__container.flex
         li.footer-contact-link__item
             a(href='tel://+79824814004').footer-contact-link.footer-contact-link_tel tel: +7 (342) 202-4-004 
         li.footer-contact-link__item
-            form(action="#").form-message
+            form(method="post" action="php/send_monolit.php").form-message
                 label(for="mail").form-message__lable Отправить сообщение:
-                input(type="email", id='mail', placeholder="Email:").form-message__input
-                textarea(name="text", cols="15", rows="3", placeholder="Ваше сообщение ...").form-message__textarea
-                button.form-message__button Отправить
-                input(type='hidden', mame='act', value='order')
+                input(type="email", id='mail', placeholder="Email:", name="email").form-message__input
+                textarea(type='text',name="message", cols="15", rows="3", placeholder="Ваше сообщение ...").form-message__textarea
+                button(type="submit").form-message__button Отправить
+                input(type="hidden" name="act" value="order")
         li.footer-contact-link__item
             a(
                 href='http://gubinvs.ru/webdevelopment.html',

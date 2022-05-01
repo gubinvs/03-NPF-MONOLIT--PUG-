@@ -122,12 +122,12 @@
           <li class="footer-contact-link__item"><a class="footer-contact-link" href="mailto:monolitsab@mail.ru">monolitsab@mail.ru</a></li>
           <li class="footer-contact-link__item"><a class="footer-contact-link footer-contact-link_tel" href="tel://+79824814004">tel: +7 (342) 202-4-004 </a></li>
           <li class="footer-contact-link__item">
-            <form class="form-message" action="#">
+            <form class="form-message" method="post" action="php/send_monolit.php">
               <label class="form-message__lable" for="mail">Отправить сообщение:</label>
-              <input class="form-message__input" type="email" id="mail" placeholder="Email:">
-              <textarea class="form-message__textarea" name="text" cols="15" rows="3" placeholder="Ваше сообщение ..."></textarea>
-              <button class="form-message__button">Отправить</button>
-              <input type="hidden" mame="act" value="order">
+              <input class="form-message__input" type="email" id="mail" placeholder="Email:" name="email">
+              <textarea class="form-message__textarea" type="text" name="message" cols="15" rows="3" placeholder="Ваше сообщение ..."></textarea>
+              <button class="form-message__button" type="submit">Отправить</button>
+              <input type="hidden" name="act" value="order">
             </form>
           </li>
           <li class="footer-contact-link__item"><a class="footer-contact-link" href="http://gubinvs.ru/webdevelopment.html" target="blank"> </a></li>
