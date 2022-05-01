@@ -6,7 +6,7 @@ block doctype
     //- Наименование главной страницы
     - var titleName = 'НПФ "Монолит" - Производство товарного бетона';
     //- Массив с путями к файлам со стилями
-    - var stylePath = ['css/beton.css'];
+    - var stylePath = ['css/beton.css', 'css/delivery-section.css'];
 
 //- Вставил блок с будующим контентом
 block content
@@ -19,4 +19,5 @@ block content
             include includes/recept-beton.pug
         section.table-price
             include includes/table-price.pug
-            
+        section.delivery-section
+            include includes/delivery-section.pug
