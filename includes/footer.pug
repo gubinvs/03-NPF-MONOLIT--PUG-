@@ -24,7 +24,7 @@ div.container.footer__container.flex
             form(method="post" action="php/send_monolit.php").form-message
                 label(for="mail").form-message__lable Отправить сообщение:
                 input(type="email", id='mail', placeholder="Email:", name="email").form-message__input
-                textarea(type='text',name="message", cols="15", rows="3", placeholder="Ваше сообщение ...").form-message__textarea
+                textarea(name="message", cols="15", rows="3", placeholder="Ваше сообщение ...").form-message__textarea
                 button(type="submit").form-message__button Отправить
                 input(type="hidden" name="act" value="order")
         li.footer-contact-link__item
